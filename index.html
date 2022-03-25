@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Uday's CalCulator</title>
+    <link rel="icon" href="./Assets/icon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="App.js"></script>
+  </head>
+  <body>
+    <div class="calculator">
+      <div class="app">
+        <div class="top-section">
+          <h2>Calculator</h2>
+          <a href="https://github.com/uday-hub" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+        <div class="input-section">
+          <input type="text" id="screen" name="screen" readonly />
+        </div>
+        <div class="bottom-section">
+          <table>
+            <tr class="top">
+              <td>AC</td>
+              <td>C</td>
+              <td>%</td>
+              <td>/</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>8</td>
+              <td>9</td>
+              <td class="side">X</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>5</td>
+              <td>6</td>
+              <td class="side">-</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+              <td class="side">+</td>
+            </tr>
+            <tr>
+              <td>0</td>
+              <td>.</td>
+              <td onclick="closeWindow()" class="equal exit">Exit</td>
+
+              <td class="equal">=</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    const closeWindow = () => {
+      window.open(location.href, "_self", "aa");
+      window.close();
+    };
+  </script>
+</html>

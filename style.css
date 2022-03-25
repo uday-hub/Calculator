@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Mochiy+Pop+P+One&family=Roboto+Mono&family=Ubuntu+Mono&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --input-box: #222222;
+  --oprator-buttons: #4f79dc;
+  --number-color: #707070;
+  --topline-color: #ececec;
+  --equal-button: #0048f2;
+  --top-section: #1d1d1d;
+  --white: #ffffff;
+}
+body {
+  font-family: "Lato", sans-serif;
+}
+.calculator {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("./Assets/background.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.app {
+  height: auto;
+}
+.top-section {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--top-section);
+  padding: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.top-section h2 {
+  letter-spacing: 1px;
+  background-color: var(--equal-button);
+  color: var(--white);
+  font-size: 1.2rem;
+  border-radius: 15px;
+  padding: 3px 15px;
+}
+.input-section {
+  width: 100%;
+  height: auto;
+}
+.input-section input {
+  text-align: right;
+  background-color: var(--input-box);
+  border: none;
+  color: var(--number-color);
+  outline: none;
+  line-height: 250%;
+  padding: 20px 10px;
+  font-size: 1.5rem;
+  float: right;
+}
+.bottom-section {
+  color: var(--number-color);
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  background-color: #1d1d1d;
+}
+
+.side,
+.equal,
+.top td {
+  color: var(--white);
+  height: 65px;
+  width: 65px;
+  background-color: #313131;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 1.5rem;
+}
+td {
+  text-align: center;
+  font-size: 2rem;
+  cursor: pointer;
+}
+td:hover {
+  border-radius: 50%;
+  color: aqua;
+  background-color: #707070;
+}
+.side {
+  background-color: var(--oprator-buttons);
+}
+table {
+  padding: 0.5rem;
+  width: 100%;
+}
+.equal {
+  font-size: 2rem;
+  background-color: var(--equal-button);
+}
+.exit {
+  background-color: red;
+}
+.fab {
+  color: #707070;
+  opacity: 0.8;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+@media screen and (max-width: 425px) {
+  .calculator {
+    height: 100%;
+    background-image: none;
+  }
+}
